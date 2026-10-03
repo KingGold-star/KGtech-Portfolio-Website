@@ -55,9 +55,9 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
     category: 'Corporate & Brand Platforms',
     projectType: 'Business Website',
     heroSubtitle: 'Custom, high-performance corporate websites designed to establish enterprise authority, articulate value propositions, and convert qualified business prospects.',
-    metaTitle: 'Business Website Development Agency | KGtech Nexus',
-    metaDescription: 'Custom business website development services by KGtech Nexus. Fast, responsive, SEO-ready corporate websites engineered for credibility and conversion.',
-    overview: 'In modern B2B and consumer markets, your website is your primary brand touchpoint. KGtech Nexus designs and engineers tailor-made business websites that combine strategic visual design, fluid responsiveness, and clean semantic architecture. We replace generic website templates with purpose-built digital assets that clearly convey your capabilities and drive inbound inquiries.',
+    metaTitle: 'Business Website Development Agency | SiteNoble',
+    metaDescription: 'Custom business website development services by SiteNoble. Fast, responsive, SEO-ready corporate websites engineered for credibility and conversion.',
+    overview: 'In modern B2B and consumer markets, your website is your primary brand touchpoint. SiteNoble designs and engineers tailor-made business websites that combine strategic visual design, fluid responsiveness, and clean semantic architecture. We replace generic website templates with purpose-built digital assets that clearly convey your capabilities and drive inbound inquiries.',
     targetAudience: [
       'B2B companies seeking enterprise credibility and inbound lead generation',
       'Professional service firms, agencies, and consultancies needing authority positioning',
@@ -160,9 +160,9 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
     category: 'Conversion Optimization',
     projectType: 'Landing Page',
     heroSubtitle: 'Laser-focused landing pages engineered for product launches, ad campaigns, and high-conversion marketing funnels.',
-    metaTitle: 'Landing Page Design & Development Agency | KGtech Nexus',
-    metaDescription: 'High-converting landing page development services by KGtech Nexus. Fast loading, responsive landing pages crafted for paid media and product launches.',
-    overview: 'A landing page has one job: turn clicks into qualified inquiries or customers. KGtech Nexus designs and develops focused landing pages that eliminate distractions, highlight value propositions, and guide visitors toward a single, compelling action. We integrate visual storytelling with rapid loading times to maximize return on advertising spend.',
+    metaTitle: 'Landing Page Design & Development Agency | SiteNoble',
+    metaDescription: 'High-converting landing page development services by SiteNoble. Fast loading, responsive landing pages crafted for paid media and product launches.',
+    overview: 'A landing page has one job: turn clicks into qualified inquiries or customers. SiteNoble designs and develops focused landing pages that eliminate distractions, highlight value propositions, and guide visitors toward a single, compelling action. We integrate visual storytelling with rapid loading times to maximize return on advertising spend.',
     targetAudience: [
       'Startups launching digital products, SaaS betas, or waitlists',
       'Marketing teams running paid ad campaigns (Google Ads, Meta, LinkedIn)',
@@ -261,9 +261,9 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
     category: 'Full-Stack Software Engineering',
     projectType: 'Web Application',
     heroSubtitle: 'Custom, scalable, and responsive web applications engineered with modern React, TypeScript, and cloud architectures.',
-    metaTitle: 'Custom Web Application Development Agency | KGtech Nexus',
-    metaDescription: 'Custom web application development services by KGtech Nexus. Scalable, secure, high-performance web apps built with React, TypeScript, and modern backends.',
-    overview: 'When off-the-shelf software falls short, custom web applications provide tailored workflows, superior performance, and complete intellectual property ownership. KGtech Nexus engineers robust web apps with modular frontend architectures, reliable state management, and secure cloud integrations designed to scale alongside your organization.',
+    metaTitle: 'Custom Web Application Development Agency | SiteNoble',
+    metaDescription: 'Custom web application development services by SiteNoble. Scalable, secure, high-performance web apps built with React, TypeScript, and modern backends.',
+    overview: 'When off-the-shelf software falls short, custom web applications provide tailored workflows, superior performance, and complete intellectual property ownership. SiteNoble engineers robust web apps with modular frontend architectures, reliable state management, and secure cloud integrations designed to scale alongside your organization.',
     targetAudience: [
       'Startups building minimum viable products (MVPs) or enterprise-ready digital products',
       'Companies automating complex internal operations and employee portals',
@@ -333,7 +333,7 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
     faqs: [
       {
         question: 'Can you build both the frontend and backend for our web application?',
-        answer: 'Yes. KGtech Nexus provides end-to-end full-stack engineering, including interface design, React frontend logic, API integrations, authentication, and database modeling.'
+        answer: 'Yes. SiteNoble provides end-to-end full-stack engineering, including interface design, React frontend logic, API integrations, authentication, and database modeling.'
       },
       {
         question: 'How do you handle data security and user permissions?',
@@ -368,9 +368,9 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
     category: 'Brand & UX Evolution',
     projectType: 'Website Redesign',
     heroSubtitle: 'Transform outdated, slow websites into fast, modern, and high-converting digital assets without losing search equity.',
-    metaTitle: 'Website Redesign Services Agency | KGtech Nexus',
-    metaDescription: 'Professional website redesign services by KGtech Nexus. Modernize your brand visuals, improve Core Web Vitals, and preserve existing SEO rankings.',
-    overview: 'As your business evolves, an aging website can undermine your credibility, frustrate mobile users, and stifle conversions. KGtech Nexus revitalizes your digital presence by updating visual aesthetics, streamlining navigation, optimizing Core Web Vitals, and executing careful SEO migration to preserve and elevate your organic search visibility.',
+    metaTitle: 'Website Redesign Services Agency | SiteNoble',
+    metaDescription: 'Professional website redesign services by SiteNoble. Modernize your brand visuals, improve Core Web Vitals, and preserve existing SEO rankings.',
+    overview: 'As your business evolves, an aging website can undermine your credibility, frustrate mobile users, and stifle conversions. SiteNoble revitalizes your digital presence by updating visual aesthetics, streamlining navigation, optimizing Core Web Vitals, and executing careful SEO migration to preserve and elevate your organic search visibility.',
     targetAudience: [
       'Companies with websites built 3+ years ago suffering from outdated visuals',
       'Businesses rebranding or expanding their service offerings',
@@ -469,9 +469,9 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
     category: 'Product & Visual Design',
     projectType: 'UI/UX Design',
     heroSubtitle: 'Intuitive user interface systems, research-backed UX architecture, and cohesive design systems that simplify complex digital products.',
-    metaTitle: 'UI/UX Design Agency & Design Systems | KGtech Nexus',
-    metaDescription: 'User-centered UI/UX design and design system services by KGtech Nexus. Wireframing, interactive prototyping, and component libraries for modern digital products.',
-    overview: 'Great software starts with exceptional user experience. KGtech Nexus designs intuitive digital interfaces that balance visual elegance with pragmatic usability. Led by Praise Egburedi, our UI/UX methodology prioritizes user empathy, design systems consistency, and technical feasibility to ensure your designs transition seamlessly into production code.',
+    metaTitle: 'UI/UX Design Agency & Design Systems | SiteNoble',
+    metaDescription: 'User-centered UI/UX design and design system services by SiteNoble. Wireframing, interactive prototyping, and component libraries for modern digital products.',
+    overview: 'Great software starts with exceptional user experience. SiteNoble designs intuitive digital interfaces that balance visual elegance with pragmatic usability. Led by Praise Egburedi, our UI/UX methodology prioritizes user empathy, design systems consistency, and technical feasibility to ensure your designs transition seamlessly into production code.',
     targetAudience: [
       'Tech startups designing their initial product interface or client portal',
       'Product teams needing a scalable Figma design system and component library',
@@ -545,7 +545,7 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
       },
       {
         question: 'Can you also code the designs you create?',
-        answer: 'Yes. As a dual design and full-stack engineering agency, KGtech Nexus seamlessly implements our designs into production React and Tailwind CSS code.'
+        answer: 'Yes. As a dual design and full-stack engineering agency, SiteNoble seamlessly implements our designs into production React and Tailwind CSS code.'
       }
     ],
     relatedProjects: [
@@ -576,9 +576,9 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
     category: 'Digital Commerce Platforms',
     projectType: 'E-commerce Website',
     heroSubtitle: 'Fast, secure, and intuitive e-commerce storefronts designed for smooth browsing, frictionless checkout, and scalable revenue growth.',
-    metaTitle: 'Custom E-Commerce Website Development Agency | KGtech Nexus',
-    metaDescription: 'Custom e-commerce website development by KGtech Nexus. Fast, mobile-first online stores with frictionless checkout and secure payment flows.',
-    overview: 'Modern online shoppers demand speed, trust, and frictionless shopping experiences. KGtech Nexus designs and builds custom e-commerce websites that present products elegantly, load instantaneously on mobile devices, and guide customers effortlessly through product discovery to completed payment.',
+    metaTitle: 'Custom E-Commerce Website Development Agency | SiteNoble',
+    metaDescription: 'Custom e-commerce website development by SiteNoble. Fast, mobile-first online stores with frictionless checkout and secure payment flows.',
+    overview: 'Modern online shoppers demand speed, trust, and frictionless shopping experiences. SiteNoble designs and builds custom e-commerce websites that present products elegantly, load instantaneously on mobile devices, and guide customers effortlessly through product discovery to completed payment.',
     targetAudience: [
       'Direct-to-consumer (D2C) brands seeking a custom, high-converting digital storefront',
       'B2B suppliers and wholesalers modernizing order placement and product catalogs',
@@ -677,9 +677,9 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
     category: 'Ongoing Technical Care',
     projectType: 'Website Maintenance',
     heroSubtitle: 'Proactive website maintenance, speed optimization, security monitoring, and feature updates so your business never experiences downtime.',
-    metaTitle: 'Website Maintenance & Performance Support | KGtech Nexus',
-    metaDescription: 'Proactive website maintenance and optimization services by KGtech Nexus. Regular updates, bug fixes, speed enhancements, and technical support.',
-    overview: 'A digital product is an evolving business asset that requires ongoing care. KGtech Nexus provides proactive maintenance, performance monitoring, continuous SEO hygiene, and rapid technical support to keep your web properties fast, secure, and functioning flawlessly.',
+    metaTitle: 'Website Maintenance & Performance Support | SiteNoble',
+    metaDescription: 'Proactive website maintenance and optimization services by SiteNoble. Regular updates, bug fixes, speed enhancements, and technical support.',
+    overview: 'A digital product is an evolving business asset that requires ongoing care. SiteNoble provides proactive maintenance, performance monitoring, continuous SEO hygiene, and rapid technical support to keep your web properties fast, secure, and functioning flawlessly.',
     targetAudience: [
       'Businesses requiring a dependable technical team to manage ongoing web updates',
       'Companies needing routine performance tuning and Core Web Vitals monitoring',
@@ -778,9 +778,9 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
     category: 'Intelligent Web Solutions',
     projectType: 'Other',
     heroSubtitle: 'Supercharge your web applications with practical AI integrations, intelligent assistants, automated workflows, and generative tools.',
-    metaTitle: 'AI Integration & Web Automation Agency | KGtech Nexus',
-    metaDescription: 'Practical AI integration and web automation services by KGtech Nexus. Integrate modern LLMs, automated workflows, and intelligent features into your web apps.',
-    overview: 'Artificial intelligence is most valuable when seamlessly woven into real-world business workflows. KGtech Nexus builds practical AI integrations—from intelligent customer assistants and document processors to generative content tools and automated business workflows—engineered for speed, reliability, and measurable ROI.',
+    metaTitle: 'AI Integration & Web Automation Agency | SiteNoble',
+    metaDescription: 'Practical AI integration and web automation services by SiteNoble. Integrate modern LLMs, automated workflows, and intelligent features into your web apps.',
+    overview: 'Artificial intelligence is most valuable when seamlessly woven into real-world business workflows. SiteNoble builds practical AI integrations—from intelligent customer assistants and document processors to generative content tools and automated business workflows—engineered for speed, reliability, and measurable ROI.',
     targetAudience: [
       'Businesses looking to automate repetitive data entry, inquiries, or workflow steps',
       'Startups building AI-powered digital products or interactive copilots',
@@ -879,9 +879,9 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
     category: 'Product Engineering',
     projectType: 'SaaS & Digital Product Development',
     heroSubtitle: 'End-to-end SaaS engineering—from MVP prototyping to scalable multi-tenant architectures, subscription billing, and user dashboards.',
-    metaTitle: 'SaaS & Digital Product Development Agency | KGtech Nexus',
-    metaDescription: 'End-to-end SaaS and digital product development by KGtech Nexus. Fast prototyping, scalable architecture, billing integration, and intuitive dashboards.',
-    overview: 'Launching a successful Software-as-a-Service (SaaS) platform requires more than code—it requires thoughtful product architecture, intuitive user onboarding, reliable subscription billing, and a technical stack that scales smoothly. KGtech Nexus partners with founders and companies to take SaaS products from concept to revenue-generating production.',
+    metaTitle: 'SaaS & Digital Product Development Agency | SiteNoble',
+    metaDescription: 'End-to-end SaaS and digital product development by SiteNoble. Fast prototyping, scalable architecture, billing integration, and intuitive dashboards.',
+    overview: 'Launching a successful Software-as-a-Service (SaaS) platform requires more than code—it requires thoughtful product architecture, intuitive user onboarding, reliable subscription billing, and a technical stack that scales smoothly. SiteNoble partners with founders and companies to take SaaS products from concept to revenue-generating production.',
     targetAudience: [
       'SaaS founders developing MVPs to validate product-market fit and attract investors',
       'Established companies transitioning service models into scalable SaaS subscription offerings',

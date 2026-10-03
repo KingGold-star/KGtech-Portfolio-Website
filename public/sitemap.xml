@@ -6,31 +6,31 @@
 
   <!-- Core Pages -->
   <url>
-    <loc>https://kgtechnexus.com/</loc>
+    <loc>https://sitenoble.com/</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/services</loc>
+    <loc>https://sitenoble.com/services</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/contact</loc>
+    <loc>https://sitenoble.com/contact</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/resume</loc>
+    <loc>https://sitenoble.com/resume</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/insights</loc>
+    <loc>https://sitenoble.com/insights</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -38,55 +38,55 @@
 
   <!-- Service Landing Pages -->
   <url>
-    <loc>https://kgtechnexus.com/services/business-websites</loc>
+    <loc>https://sitenoble.com/services/business-websites</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/services/landing-pages</loc>
+    <loc>https://sitenoble.com/services/landing-pages</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/services/web-applications</loc>
+    <loc>https://sitenoble.com/services/web-applications</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/services/website-redesign</loc>
+    <loc>https://sitenoble.com/services/website-redesign</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/services/ui-ux-design</loc>
+    <loc>https://sitenoble.com/services/ui-ux-design</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/services/ecommerce-development</loc>
+    <loc>https://sitenoble.com/services/ecommerce-development</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/services/website-maintenance</loc>
+    <loc>https://sitenoble.com/services/website-maintenance</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/services/ai-integration</loc>
+    <loc>https://sitenoble.com/services/ai-integration</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/services/saas-development</loc>
+    <loc>https://sitenoble.com/services/saas-development</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -94,13 +94,13 @@
 
   <!-- Project Case Studies -->
   <url>
-    <loc>https://kgtechnexus.com/projects/studpal</loc>
+    <loc>https://sitenoble.com/projects/studpal</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/projects/aurenix</loc>
+    <loc>https://sitenoble.com/projects/aurenix</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -108,49 +108,49 @@
 
   <!-- Insight Articles -->
   <url>
-    <loc>https://kgtechnexus.com/insights/how-to-choose-a-website-development-agency</loc>
+    <loc>https://sitenoble.com/insights/how-to-choose-a-website-development-agency</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/insights/signs-your-business-website-needs-a-redesign</loc>
+    <loc>https://sitenoble.com/insights/signs-your-business-website-needs-a-redesign</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/insights/custom-web-applications-vs-traditional-websites</loc>
+    <loc>https://sitenoble.com/insights/custom-web-applications-vs-traditional-websites</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/insights/why-website-performance-matters-for-business</loc>
+    <loc>https://sitenoble.com/insights/why-website-performance-matters-for-business</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/insights/essential-ui-ux-principles-for-business-websites</loc>
+    <loc>https://sitenoble.com/insights/essential-ui-ux-principles-for-business-websites</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/insights/how-saas-products-are-designed-and-developed</loc>
+    <loc>https://sitenoble.com/insights/how-saas-products-are-designed-and-developed</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/insights/ai-integration-for-modern-business-websites</loc>
+    <loc>https://sitenoble.com/insights/ai-integration-for-modern-business-websites</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://kgtechnexus.com/insights/what-businesses-should-consider-before-building-an-ecommerce-website</loc>
+    <loc>https://sitenoble.com/insights/what-businesses-should-consider-before-building-an-ecommerce-website</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>

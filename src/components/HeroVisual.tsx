@@ -221,7 +221,7 @@ export const HeroVisual: React.FC = () => {
           <div className="mt-4 pt-3 flex items-center justify-between text-xs text-slate-500">
             <span className="flex items-center gap-1.5">
               <Layers className="w-3.5 h-3.5 text-slate-400" />
-              <span>KGtech Nexus Platform · Lead Engineer Praise Egburedi</span>
+              <span>SiteNoble Platform · Lead Engineer Praise Egburedi</span>
             </span>
             <button
               onClick={() => navigate('/projects/studpal')}

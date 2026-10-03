@@ -47,11 +47,11 @@ export const Footer: React.FC = () => {
             >
               <img 
                 src="/favicon.png" 
-                alt="KGtech Nexus Logo" 
+                alt="SiteNoble Logo" 
                 className="w-8 h-8 rounded-xl object-contain shadow-xs group-hover:scale-105 transition-transform" 
               />
               <span className="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900">
-                KGtech <span className="text-[#2D62FF]">Nexus</span>
+                SiteNoble <span className="text-[#2D62FF]">Nexus</span>
               </span>
             </div>
 
@@ -73,7 +73,7 @@ export const Footer: React.FC = () => {
             {/* Left Column: Mission Statement & Address */}
             <div className="lg:col-span-6 space-y-5 max-w-lg">
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                KGtech Nexus gives modern enterprises and fast-growing ventures a dedicated software engineering and product design partner — signal-aware, always on, zero overhead.
+                SiteNoble gives modern enterprises and fast-growing ventures a dedicated software engineering and product design partner — signal-aware, always on, zero overhead.
               </p>
 
               <div className="space-y-1 pt-1">
@@ -232,7 +232,7 @@ export const Footer: React.FC = () => {
                   </li>
                   <li>
                     <a
-                      href="https://mail.google.com/mail/?view=cm&fs=1&to=egburedipraise@gmail.com&su=Project%20Inquiry%20%E2%80%93%20KGtech%20Nexus&body=Hello%20Praise%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.%0A%0A"
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=egburedipraise@gmail.com&su=Project%20Inquiry%20%E2%80%93%20SiteNoble%20Nexus&body=Hello%20Praise%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.%0A%0A"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => trackEvent('contact_email_click', { source: 'footer' })}
@@ -278,7 +278,7 @@ export const Footer: React.FC = () => {
           <div className="pt-6 sm:pt-8 border-t border-slate-100/90 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] sm:text-xs text-slate-400 relative z-10">
             
             <p>
-              ©{currentYear} KGtech Nexus. All rights reserved
+              ©{currentYear} SiteNoble. All rights reserved
             </p>
 
             <div className="flex items-center gap-4 sm:gap-6 text-slate-500">
@@ -340,7 +340,7 @@ export const Footer: React.FC = () => {
               {activeModal === 'terms' && (
                 <>
                   <p>
-                    By accessing and using this portfolio and digital agency website for KGtech Nexus, you agree to comply with and be bound by applicable engineering contract standards and terms of engagement.
+                    By accessing and using this portfolio and digital agency website for SiteNoble, you agree to comply with and be bound by applicable engineering contract standards and terms of engagement.
                   </p>
                   <p>
                     All project case studies, client code architectures, and technical deliverables are protected under international copyright and technical property agreements.

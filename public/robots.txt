@@ -1,9 +1,9 @@
-# KGtech Nexus robots.txt
-# https://kgtechnexus.com
+# SiteNoble robots.txt
+# https://sitenoble.com
 
 User-agent: *
 Allow: /
 Disallow: /api/
 
 # Sitemaps
-Sitemap: https://kgtechnexus.com/sitemap.xml
+Sitemap: https://sitenoble.com/sitemap.xml

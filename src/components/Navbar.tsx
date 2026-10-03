@@ -143,9 +143,9 @@ export const Navbar: React.FC = () => {
           <button
             onClick={() => handleNavClick('/', 'Home')}
             className="text-lg sm:text-2xl font-extrabold tracking-tight text-[#0B0B0F] hover:text-[#2D62FF] transition-colors focus:outline-none flex items-center cursor-pointer flex-shrink-0 mr-1 sm:mr-2"
-            aria-label="KGtech Nexus Homepage"
+            aria-label="SiteNoble Homepage"
           >
-            <span>KGtech Nexus</span>
+            <span>SiteNoble</span>
             <span className="text-[#2D62FF]">.</span>
           </button>
 

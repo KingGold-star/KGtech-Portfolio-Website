@@ -14,8 +14,8 @@ export const NotFoundPage: React.FC = () => {
   return (
     <div className="pt-32 pb-24 bg-white text-center px-6">
       <SEOHead
-        title="404 – Page Not Found | KGtech Nexus"
-        description="The requested page could not be found on KGtech Nexus."
+        title="404 – Page Not Found | SiteNoble"
+        description="The requested page could not be found on SiteNoble."
         canonicalPath="/404"
         noindex={true}
       />

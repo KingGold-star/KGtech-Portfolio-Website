@@ -26,14 +26,14 @@ export const InsightsIndexPage: React.FC = () => {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Blog',
-    name: 'KGtech Nexus Engineering & Digital Strategy Insights',
-    description: 'Expert technical insights on web development, UI/UX architecture, performance optimization, and SaaS development by Praise Egburedi & KGtech Nexus.',
-    url: 'https://kgtechnexus.com/insights',
+    name: 'SiteNoble Engineering & Digital Strategy Insights',
+    description: 'Expert technical insights on web development, UI/UX architecture, performance optimization, and SaaS development by Praise Egburedi & SiteNoble.',
+    url: 'https://sitenoble.com/insights',
     blogPost: articlesList.map((art) => ({
       '@type': 'BlogPosting',
       headline: art.title,
       description: art.excerpt,
-      url: `https://kgtechnexus.com/insights/${art.slug}`,
+      url: `https://sitenoble.com/insights/${art.slug}`,
       datePublished: art.publishedDate,
       dateModified: art.updatedDate,
       author: {
@@ -46,8 +46,8 @@ export const InsightsIndexPage: React.FC = () => {
   return (
     <div className="pt-28 sm:pt-32 pb-24 sm:pb-32 bg-white text-left">
       <SEOHead
-        title="Insights & Web Engineering Articles | KGtech Nexus"
-        description="Technical insights, web performance audits, UI/UX principles, and digital product strategies by Praise Egburedi and KGtech Nexus."
+        title="Insights & Web Engineering Articles | SiteNoble"
+        description="Technical insights, web performance audits, UI/UX principles, and digital product strategies by Praise Egburedi and SiteNoble."
         canonicalPath="/insights"
         schema={schema}
       />

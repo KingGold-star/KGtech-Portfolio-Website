@@ -249,7 +249,7 @@ const DEFAULT_TESTIMONIALS: TestimonialItem[] = [
   {
     id: 'testimonial-1',
     quote:
-      'Partnering with KGtech Nexus and Praise on our product was a game-changer. Praise understood our product vision immediately—refining our user flows and delivering a responsive web application that our early users love using. His attention to detail in React and state architecture is exceptional.',
+      'Partnering with SiteNoble and Praise on our product was a game-changer. Praise understood our product vision immediately—refining our user flows and delivering a responsive web application that our early users love using. His attention to detail in React and state architecture is exceptional.',
     author: 'Marcus Vance',
     role: 'Founder & CEO',
     country: 'United States',
@@ -262,7 +262,7 @@ const DEFAULT_TESTIMONIALS: TestimonialItem[] = [
   {
     id: 'testimonial-2',
     quote:
-      'Working with KGtech Nexus on our e-commerce platform was completely seamless. Praise translated our complex product catalog into an ultra-fast checkout flow that directly elevated our sales and average order value. Fast, modern, and sharp on all mobile screens.',
+      'Working with SiteNoble on our e-commerce platform was completely seamless. Praise translated our complex product catalog into an ultra-fast checkout flow that directly elevated our sales and average order value. Fast, modern, and sharp on all mobile screens.',
     author: 'Chioma Adeyemi',
     role: 'Head of Operations',
     country: 'Nigeria',
@@ -288,7 +288,7 @@ const DEFAULT_TESTIMONIALS: TestimonialItem[] = [
   {
     id: 'testimonial-4',
     quote:
-      'KGtech Nexus combines top-tier visual design judgment with rigorous frontend engineering under Praise’s technical direction. They took our wireframes and turned them into a polished, accessible interface well ahead of deadline. Communication was proactive throughout.',
+      'SiteNoble combines top-tier visual design judgment with rigorous frontend engineering under Praise’s technical direction. They took our wireframes and turned them into a polished, accessible interface well ahead of deadline. Communication was proactive throughout.',
     author: 'David Tremblay',
     role: 'Technical Lead',
     country: 'Canada',
@@ -301,7 +301,7 @@ const DEFAULT_TESTIMONIALS: TestimonialItem[] = [
   {
     id: 'testimonial-5',
     quote:
-      'Praise engineered our research platform with impeccable precision. Complex scientific data and interactive visualizations rendered smoothly on both mobile and desktop without any lag. If you need clean code and high-performance digital execution, KGtech Nexus is second to none.',
+      'Praise engineered our research platform with impeccable precision. Complex scientific data and interactive visualizations rendered smoothly on both mobile and desktop without any lag. If you need clean code and high-performance digital execution, SiteNoble is second to none.',
     author: 'Elena Rostova',
     role: 'Co-Founder',
     country: 'Germany',
@@ -872,7 +872,7 @@ export const TestimonialsSection: React.FC = () => {
           {/* Verified Project Badge */}
           <div 
             className="flex items-center gap-1 text-[11px] font-medium text-slate-500 shrink-0" 
-            title="Verified client project delivered by KGtech Nexus"
+            title="Verified client project delivered by SiteNoble"
           >
             <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
             <span className="hidden sm:inline">Verified</span>
@@ -912,7 +912,7 @@ export const TestimonialsSection: React.FC = () => {
             </h2>
             
             <p className="mt-3.5 text-base sm:text-lg text-slate-600 leading-relaxed">
-              Real feedback from companies that partnered with Praise and KGtech Nexus to launch web applications, landing pages, and high-performance digital products.
+              Real feedback from companies that partnered with Praise and SiteNoble to launch web applications, landing pages, and high-performance digital products.
             </p>
           </div>
 
@@ -1231,7 +1231,7 @@ export const TestimonialsSection: React.FC = () => {
                     required
                     value={reviewForm.quote}
                     onChange={(e) => setReviewForm({ ...reviewForm, quote: e.target.value })}
-                    placeholder="Share how working with Praise & KGtech Nexus benefited your project, the quality of delivery, communication, or speed..."
+                    placeholder="Share how working with Praise & SiteNoble benefited your project, the quality of delivery, communication, or speed..."
                     className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs sm:text-sm text-slate-900 focus:border-[#2D62FF] focus:ring-1 focus:ring-[#2D62FF] leading-relaxed resize-y"
                   />
                 </div>

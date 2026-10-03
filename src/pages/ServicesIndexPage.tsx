@@ -42,21 +42,21 @@ export const ServicesIndexPage: React.FC = () => {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'KGtech Nexus Digital Services & Capabilities',
-    description: 'Comprehensive web development, UI/UX design, SaaS, and AI integration services by KGtech Nexus.',
+    name: 'SiteNoble Digital Services & Capabilities',
+    description: 'Comprehensive web development, UI/UX design, SaaS, and AI integration services by SiteNoble.',
     itemListElement: servicesList.map((srv, index) => ({
       '@type': 'ListItem',
       position: index + 1,
       name: srv.title,
-      url: `https://kgtechnexus.com/services/${srv.slug}`
+      url: `https://sitenoble.com/services/${srv.slug}`
     }))
   };
 
   return (
     <div className="pt-28 sm:pt-32 pb-24 sm:pb-32 bg-white">
       <SEOHead
-        title="Web Development & Digital Product Services | KGtech Nexus"
-        description="Explore custom web development, UI/UX design, SaaS engineering, e-commerce, and AI integration services by KGtech Nexus. Engineered for high performance."
+        title="Web Development & Digital Product Services | SiteNoble"
+        description="Explore custom web development, UI/UX design, SaaS engineering, e-commerce, and AI integration services by SiteNoble. Engineered for high performance."
         canonicalPath="/services"
         schema={schema}
       />
@@ -76,7 +76,7 @@ export const ServicesIndexPage: React.FC = () => {
             </h1>
 
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal pt-1">
-              From high-converting corporate websites and focused landing pages to complex full-stack web applications and SaaS platforms—KGtech Nexus turns commercial objectives into high-performing digital realities.
+              From high-converting corporate websites and focused landing pages to complex full-stack web applications and SaaS platforms—SiteNoble turns commercial objectives into high-performing digital realities.
             </p>
           </header>
         </ScrollReveal>
@@ -182,7 +182,7 @@ export const ServicesIndexPage: React.FC = () => {
                 Need a Tailored Digital Architecture?
               </h3>
               <p className="text-sm text-slate-300 leading-relaxed font-normal">
-                Whether you have a complex enterprise integration, specialized API needs, or a multi-platform concept, KGtech Nexus provides technical direction and bespoke software engineering.
+                Whether you have a complex enterprise integration, specialized API needs, or a multi-platform concept, SiteNoble provides technical direction and bespoke software engineering.
               </p>
             </div>
 

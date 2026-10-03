@@ -89,7 +89,7 @@ export const FAQSection: React.FC = () => {
       category: 'timeline',
       question: 'Do you offer ongoing support and maintenance after the website goes live?',
       badge: 'Post-Launch',
-      answer: 'Every deployment includes a 30-day post-launch warranty covering bug fixes and technical adjustments. For clients seeking continuous peace of mind, KGtech Nexus offers monthly retainer tiers covering ongoing feature development, performance audits, security patches, and priority technical support.',
+      answer: 'Every deployment includes a 30-day post-launch warranty covering bug fixes and technical adjustments. For clients seeking continuous peace of mind, SiteNoble offers monthly retainer tiers covering ongoing feature development, performance audits, security patches, and priority technical support.',
     },
   ];
 
@@ -117,7 +117,7 @@ export const FAQSection: React.FC = () => {
           </h2>
           
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
-            Clear expectations lead to great digital products. Here is how Praise and KGtech Nexus manage design iterations, milestones, and delivery schedules.
+            Clear expectations lead to great digital products. Here is how Praise and SiteNoble manage design iterations, milestones, and delivery schedules.
           </p>
 
           {/* Category Filter Pills */}

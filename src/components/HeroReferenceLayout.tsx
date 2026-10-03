@@ -72,7 +72,7 @@ export const HeroReferenceLayout: React.FC = () => {
 
             {/* Description Paragraph */}
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-sm font-normal">
-              Lead Web Developer &amp; UI/UX Architect at <strong className="font-semibold text-slate-900">KGtech Nexus</strong>. Building modern web applications, high-converting digital platforms, and intuitive interfaces that move businesses forward.
+              Lead Web Developer &amp; UI/UX Architect at <strong className="font-semibold text-slate-900">SiteNoble</strong>. Building modern web applications, high-converting digital platforms, and intuitive interfaces that move businesses forward.
             </p>
 
             {/* Floating Email Callout Bubble with Pointer */}
@@ -94,7 +94,7 @@ export const HeroReferenceLayout: React.FC = () => {
               <div className="mt-3 flex items-center gap-3">
                 {/* Email Circle (Primary Blue Glass) */}
                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=egburedipraise@gmail.com&su=Project%20Inquiry%20%E2%80%93%20KGtech%20Nexus&body=Hello%20Praise%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.%0A%0A"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=egburedipraise@gmail.com&su=Project%20Inquiry%20%E2%80%93%20SiteNoble%20Nexus&body=Hello%20Praise%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.%0A%0A"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => trackEvent('contact_email_click', { source: 'hero_circle_icon' })}

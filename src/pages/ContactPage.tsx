@@ -25,13 +25,13 @@ export const ContactPage: React.FC = () => {
   const contactSchema = {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
-    name: 'Start an Agency Project | KGtech Nexus',
-    description: 'Get in touch with KGtech Nexus to discuss your web development, UI/UX design, or digital product requirements.',
-    url: 'https://kgtechnexus.com/contact',
+    name: 'Start an Agency Project | SiteNoble',
+    description: 'Get in touch with SiteNoble to discuss your web development, UI/UX design, or digital product requirements.',
+    url: 'https://sitenoble.com/contact',
     mainEntity: {
       '@type': 'Organization',
-      name: 'KGtech Nexus',
-      url: 'https://kgtechnexus.com',
+      name: 'SiteNoble',
+      url: 'https://sitenoble.com',
       email: 'egburedipraise@gmail.com'
     }
   };
@@ -39,8 +39,8 @@ export const ContactPage: React.FC = () => {
   return (
     <div className="relative pt-28 sm:pt-32 pb-24 sm:pb-32 bg-white overflow-hidden">
       <SEOHead
-        title="Start a Project & Contact KGtech Nexus | Web Development Agency"
-        description="Ready to build your next web application or high-converting website? Get in touch with Praise and KGtech Nexus for project scoping and estimates."
+        title="Start a Project & Contact SiteNoble | Web Development Agency"
+        description="Ready to build your next web application or high-converting website? Get in touch with Praise and SiteNoble for project scoping and estimates."
         canonicalPath="/contact"
         schema={contactSchema}
       />
@@ -91,7 +91,7 @@ export const ContactPage: React.FC = () => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
                     {/* Gmail Direct */}
                     <a
-                      href="https://mail.google.com/mail/?view=cm&fs=1&to=egburedipraise@gmail.com&su=Project%20Inquiry%20%E2%80%93%20KGtech%20Nexus&body=Hello%20Praise%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.%0A%0A"
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=egburedipraise@gmail.com&su=Project%20Inquiry%20%E2%80%93%20SiteNoble%20Nexus&body=Hello%20Praise%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.%0A%0A"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => trackEvent('contact_email_click', { source: 'contact_page_left' })}

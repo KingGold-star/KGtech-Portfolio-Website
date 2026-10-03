@@ -55,20 +55,20 @@ export const InsightDetailPage: React.FC<InsightDetailPageProps> = ({ slug }) =>
         description: article.excerpt,
         datePublished: article.publishedDate,
         dateModified: article.updatedDate,
-        mainEntityOfPage: `https://kgtechnexus.com/insights/${article.slug}`,
+        mainEntityOfPage: `https://sitenoble.com/insights/${article.slug}`,
         author: {
           '@type': 'Person',
           name: article.author.name,
           jobTitle: article.author.role,
-          url: 'https://kgtechnexus.com/resume'
+          url: 'https://sitenoble.com/resume'
         },
         publisher: {
           '@type': 'Organization',
-          name: 'KGtech Nexus',
-          url: 'https://kgtechnexus.com',
+          name: 'SiteNoble',
+          url: 'https://sitenoble.com',
           logo: {
             '@type': 'ImageObject',
-            url: 'https://kgtechnexus.com/favicon.png'
+            url: 'https://sitenoble.com/favicon.png'
           }
         }
       },
@@ -79,19 +79,19 @@ export const InsightDetailPage: React.FC<InsightDetailPageProps> = ({ slug }) =>
             '@type': 'ListItem',
             position: 1,
             name: 'Home',
-            item: 'https://kgtechnexus.com'
+            item: 'https://sitenoble.com'
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'Insights',
-            item: 'https://kgtechnexus.com/insights'
+            item: 'https://sitenoble.com/insights'
           },
           {
             '@type': 'ListItem',
             position: 3,
             name: article.title,
-            item: `https://kgtechnexus.com/insights/${article.slug}`
+            item: `https://sitenoble.com/insights/${article.slug}`
           }
         ]
       }
@@ -294,7 +294,7 @@ export const InsightDetailPage: React.FC<InsightDetailPageProps> = ({ slug }) =>
                 Written by Praise Egburedi
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Praise Egburedi leads web engineering and UI/UX architecture at KGtech Nexus, designing high-performance web applications and digital platforms for international startups and brands.
+                Praise Egburedi leads web engineering and UI/UX architecture at SiteNoble, designing high-performance web applications and digital platforms for international startups and brands.
               </p>
               <div className="pt-1">
                 <button

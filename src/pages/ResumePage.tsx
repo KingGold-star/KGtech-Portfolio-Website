@@ -27,7 +27,7 @@ export const ResumePage: React.FC = () => {
     trackEvent('cv_download_click', { format: 'pdf_document' });
     try {
       setIsDownloading(true);
-      downloadCVPdf('Praise_Egburedi_CV_KGtech_Nexus.pdf');
+      downloadCVPdf('Praise_Egburedi_CV_SiteNoble_Nexus.pdf');
     } catch (err) {
       console.error('Failed to generate PDF document:', err);
     } finally {
@@ -48,10 +48,10 @@ export const ResumePage: React.FC = () => {
     jobTitle: 'Lead Web Developer & UI/UX Architect',
     worksFor: {
       '@type': 'Organization',
-      name: 'KGtech Nexus',
-      url: 'https://kgtechnexus.com'
+      name: 'SiteNoble',
+      url: 'https://sitenoble.com'
     },
-    url: 'https://kgtechnexus.com/resume',
+    url: 'https://sitenoble.com/resume',
     email: 'egburedipraise@gmail.com',
     sameAs: [
       'https://github.com/PraiseEgburedi'
@@ -72,8 +72,8 @@ export const ResumePage: React.FC = () => {
   return (
     <div className="pt-24 pb-20 bg-white">
       <SEOHead
-        title="Praise Egburedi – Lead Web Developer & UI/UX Architect | KGtech Nexus"
-        description="Professional background, technical stack, and verified experience of Praise Egburedi, Lead Web Developer and UI/UX Architect at KGtech Nexus."
+        title="Praise Egburedi – Lead Web Developer & UI/UX Architect | SiteNoble"
+        description="Professional background, technical stack, and verified experience of Praise Egburedi, Lead Web Developer and UI/UX Architect at SiteNoble."
         canonicalPath="/resume"
         schema={personSchema}
       />
@@ -129,12 +129,12 @@ export const ResumePage: React.FC = () => {
                 Praise Egburedi
               </h1>
               <span className="text-sm font-medium text-[#2D62FF]">
-                Lead Web Developer &amp; UI/UX Architect &nbsp;·&nbsp; KGtech Nexus
+                Lead Web Developer &amp; UI/UX Architect &nbsp;·&nbsp; SiteNoble
               </span>
             </div>
 
             <p className="text-sm text-slate-600 max-w-2xl leading-relaxed">
-              "At KGtech Nexus, we design and build digital experiences that move businesses forward. With Praise Egburedi directing web development and UI/UX architecture, we help founders and growing enterprises establish commanding digital presence through high-performance websites, intuitive interfaces, and scalable web applications."
+              "At SiteNoble, we design and build digital experiences that move businesses forward. With Praise Egburedi directing web development and UI/UX architecture, we help founders and growing enterprises establish commanding digital presence through high-performance websites, intuitive interfaces, and scalable web applications."
             </p>
 
             <div className="pt-2 flex flex-wrap items-center gap-4 text-xs text-slate-500">
@@ -143,7 +143,7 @@ export const ResumePage: React.FC = () => {
                 egburedipraise@gmail.com
               </span>
               <span aria-hidden="true">·</span>
-              <span>Agency: KGtech Nexus</span>
+              <span>Agency: SiteNoble</span>
               <span aria-hidden="true">·</span>
               <span>Available for Client Engagements Worldwide</span>
             </div>

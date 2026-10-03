@@ -15,7 +15,7 @@ export interface SEOHeadProps {
   noindex?: boolean;
 }
 
-const BASE_URL = 'https://kgtechnexus.com';
+const BASE_URL = 'https://sitenoble.com';
 const DEFAULT_OG_IMAGE = `${BASE_URL}/images/praise_portrait.png`;
 
 export const SEOHead: React.FC<SEOHeadProps> = ({
@@ -67,7 +67,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     setMetaTag('property', 'og:description', description);
     setMetaTag('property', 'og:url', canonicalUrl);
     setMetaTag('property', 'og:type', ogType);
-    setMetaTag('property', 'og:site_name', 'KGtech Nexus');
+    setMetaTag('property', 'og:site_name', 'SiteNoble');
     setMetaTag('property', 'og:image', ogImage.startsWith('http') ? ogImage : `${BASE_URL}${ogImage}`);
     setMetaTag('property', 'og:locale', 'en_US');
 
@@ -76,7 +76,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     setMetaTag('name', 'twitter:title', title);
     setMetaTag('name', 'twitter:description', description);
     setMetaTag('name', 'twitter:image', ogImage.startsWith('http') ? ogImage : `${BASE_URL}${ogImage}`);
-    setMetaTag('name', 'twitter:creator', '@KGtechNexus');
+    setMetaTag('name', 'twitter:creator', '@SiteNobleNexus');
 
     // 6. Dynamic JSON-LD Structured Data
     if (schema) {

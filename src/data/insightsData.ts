@@ -45,9 +45,9 @@ export const INSIGHTS_DATA: Record<string, InsightArticle> = {
     readTime: '6 min read',
     author: {
       name: 'Praise Egburedi',
-      role: 'Lead Web Developer & UI/UX Architect, KGtech Nexus'
+      role: 'Lead Web Developer & UI/UX Architect, SiteNoble'
     },
-    metaTitle: 'How to Choose a Website Development Agency | KGtech Nexus',
+    metaTitle: 'How to Choose a Website Development Agency | SiteNoble',
     metaDescription: 'Learn how to evaluate web development agencies. Discover key questions to ask, technical red flags, pricing structures, and how to select the right partner.',
     tableOfContents: [
       { id: 'define-objectives', title: '1. Define Your Technical & Business Objectives' },
@@ -122,9 +122,9 @@ export const INSIGHTS_DATA: Record<string, InsightArticle> = {
     readTime: '5 min read',
     author: {
       name: 'Praise Egburedi',
-      role: 'Lead Web Developer & UI/UX Architect, KGtech Nexus'
+      role: 'Lead Web Developer & UI/UX Architect, SiteNoble'
     },
-    metaTitle: 'Signs Your Business Website Needs a Redesign | KGtech Nexus',
+    metaTitle: 'Signs Your Business Website Needs a Redesign | SiteNoble',
     metaDescription: 'Discover the top warning signs that your business website is outdated. Learn when to redesign to increase conversions, speed, and brand credibility.',
     tableOfContents: [
       { id: 'mobile-experience', title: '1. Poor Mobile Usability & High Bounce Rates' },
@@ -195,9 +195,9 @@ export const INSIGHTS_DATA: Record<string, InsightArticle> = {
     readTime: '7 min read',
     author: {
       name: 'Praise Egburedi',
-      role: 'Lead Web Developer & UI/UX Architect, KGtech Nexus'
+      role: 'Lead Web Developer & UI/UX Architect, SiteNoble'
     },
-    metaTitle: 'Custom Web Apps vs Traditional Websites | KGtech Nexus',
+    metaTitle: 'Custom Web Apps vs Traditional Websites | SiteNoble',
     metaDescription: 'Compare custom web applications and traditional business websites. Understand architecture, development costs, scalability, and business use cases.',
     tableOfContents: [
       { id: 'core-differences', title: '1. The Core Architectural Difference' },
@@ -266,9 +266,9 @@ export const INSIGHTS_DATA: Record<string, InsightArticle> = {
     readTime: '6 min read',
     author: {
       name: 'Praise Egburedi',
-      role: 'Lead Web Developer & UI/UX Architect, KGtech Nexus'
+      role: 'Lead Web Developer & UI/UX Architect, SiteNoble'
     },
-    metaTitle: 'Why Website Performance Impacts Business Revenue | KGtech Nexus',
+    metaTitle: 'Why Website Performance Impacts Business Revenue | SiteNoble',
     metaDescription: 'Learn how website speed and Core Web Vitals directly affect your bottom line. Discover how sub-second load times boost conversions and SEO rankings.',
     tableOfContents: [
       { id: 'user-psychology', title: '1. The Psychology of Milliseconds in User Experience' },
@@ -320,7 +320,7 @@ export const INSIGHTS_DATA: Record<string, InsightArticle> = {
         sectionId: 'engineering-best-practices',
         heading: '5. Technical Strategies for Sub-Second Performance',
         paragraphs: [
-          'At KGtech Nexus, we achieve exceptional performance by:',
+          'At SiteNoble, we achieve exceptional performance by:',
           '• Writing lean, custom React and TypeScript code without heavy third-party framework dependencies.',
           '• Pre-compressing images in WebP/AVIF formats with explicit width/height dimensions to eliminate layout shifts.',
           '• Utilizing hardware-accelerated CSS transitions and tree-shaken modern bundling.'
@@ -343,9 +343,9 @@ export const INSIGHTS_DATA: Record<string, InsightArticle> = {
     readTime: '5 min read',
     author: {
       name: 'Praise Egburedi',
-      role: 'Lead Web Developer & UI/UX Architect, KGtech Nexus'
+      role: 'Lead Web Developer & UI/UX Architect, SiteNoble'
     },
-    metaTitle: 'Essential UI/UX Principles for Business Websites | KGtech Nexus',
+    metaTitle: 'Essential UI/UX Principles for Business Websites | SiteNoble',
     metaDescription: 'Discover essential UI/UX principles for business websites. Learn how visual hierarchy, whitespace, and micro-interactions improve user engagement and conversion.',
     tableOfContents: [
       { id: 'visual-hierarchy', title: '1. Establish Clear Visual Hierarchy' },
@@ -410,9 +410,9 @@ export const INSIGHTS_DATA: Record<string, InsightArticle> = {
     readTime: '7 min read',
     author: {
       name: 'Praise Egburedi',
-      role: 'Lead Web Developer & UI/UX Architect, KGtech Nexus'
+      role: 'Lead Web Developer & UI/UX Architect, SiteNoble'
     },
-    metaTitle: 'How SaaS Products Are Designed and Developed | KGtech Nexus',
+    metaTitle: 'How SaaS Products Are Designed and Developed | SiteNoble',
     metaDescription: 'Learn how to design, engineer, and launch scalable SaaS products. Explore architecture, multi-tenant databases, Stripe subscriptions, and MVP roadmaps.',
     tableOfContents: [
       { id: 'mvp-scoping', title: '1. Scoping the Minimum Viable Product (MVP)' },
@@ -475,9 +475,9 @@ export const INSIGHTS_DATA: Record<string, InsightArticle> = {
     readTime: '6 min read',
     author: {
       name: 'Praise Egburedi',
-      role: 'Lead Web Developer & UI/UX Architect, KGtech Nexus'
+      role: 'Lead Web Developer & UI/UX Architect, SiteNoble'
     },
-    metaTitle: 'AI Integration for Modern Business Websites | KGtech Nexus',
+    metaTitle: 'AI Integration for Modern Business Websites | SiteNoble',
     metaDescription: 'Practical guide to integrating AI into business websites and web apps. Learn real-world use cases, API security, token efficiency, and implementation.',
     tableOfContents: [
       { id: 'practical-use-cases', title: '1. Identifying High-Impact AI Use Cases' },
@@ -540,9 +540,9 @@ export const INSIGHTS_DATA: Record<string, InsightArticle> = {
     readTime: '6 min read',
     author: {
       name: 'Praise Egburedi',
-      role: 'Lead Web Developer & UI/UX Architect, KGtech Nexus'
+      role: 'Lead Web Developer & UI/UX Architect, SiteNoble'
     },
-    metaTitle: 'What to Consider Before Building an E-Commerce Website | KGtech Nexus',
+    metaTitle: 'What to Consider Before Building an E-Commerce Website | SiteNoble',
     metaDescription: 'Essential guide for launching an e-commerce website. Discover checkout optimization, mobile shopping UX, payment security, and technical requirements.',
     tableOfContents: [
       { id: 'mobile-checkout-flow', title: '1. Frictionless Mobile Checkout Architecture' },

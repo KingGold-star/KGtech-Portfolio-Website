@@ -59,14 +59,14 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ slug }) =>
         serviceType: service.category,
         provider: {
           '@type': 'Organization',
-          name: 'KGtech Nexus',
-          url: 'https://kgtechnexus.com'
+          name: 'SiteNoble',
+          url: 'https://sitenoble.com'
         },
         description: service.overview,
         areaServed: 'Worldwide',
         offers: {
           '@type': 'Offer',
-          url: `https://kgtechnexus.com/services/${service.slug}`
+          url: `https://sitenoble.com/services/${service.slug}`
         }
       },
       {
@@ -76,19 +76,19 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ slug }) =>
             '@type': 'ListItem',
             position: 1,
             name: 'Home',
-            item: 'https://kgtechnexus.com'
+            item: 'https://sitenoble.com'
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'Services',
-            item: 'https://kgtechnexus.com/services'
+            item: 'https://sitenoble.com/services'
           },
           {
             '@type': 'ListItem',
             position: 3,
             name: service.shortTitle,
-            item: `https://kgtechnexus.com/services/${service.slug}`
+            item: `https://sitenoble.com/services/${service.slug}`
           }
         ]
       }
@@ -443,7 +443,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ slug }) =>
                 Ready to build your {service.shortTitle}?
               </h3>
               <p className="text-xs sm:text-sm text-slate-300">
-                Schedule a discovery session with Praise and KGtech Nexus to review your technical requirements and receive an engineering roadmap.
+                Schedule a discovery session with Praise and SiteNoble to review your technical requirements and receive an engineering roadmap.
               </p>
             </div>
 

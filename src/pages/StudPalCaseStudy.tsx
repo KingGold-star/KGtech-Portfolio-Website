@@ -25,9 +25,9 @@ export const StudPalCaseStudy: React.FC = () => {
     '@graph': [
       {
         '@type': 'WebPage',
-        name: 'StudPal Web Application Case Study | KGtech Nexus',
-        description: 'Comprehensive case study on StudPal, a personalized study companion and productivity web application engineered by KGtech Nexus.',
-        url: 'https://kgtechnexus.com/projects/studpal'
+        name: 'StudPal Web Application Case Study | SiteNoble',
+        description: 'Comprehensive case study on StudPal, a personalized study companion and productivity web application engineered by SiteNoble.',
+        url: 'https://sitenoble.com/projects/studpal'
       },
       {
         '@type': 'BreadcrumbList',
@@ -36,13 +36,13 @@ export const StudPalCaseStudy: React.FC = () => {
             '@type': 'ListItem',
             position: 1,
             name: 'Home',
-            item: 'https://kgtechnexus.com'
+            item: 'https://sitenoble.com'
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'StudPal Case Study',
-            item: 'https://kgtechnexus.com/projects/studpal'
+            item: 'https://sitenoble.com/projects/studpal'
           }
         ]
       }
@@ -52,8 +52,8 @@ export const StudPalCaseStudy: React.FC = () => {
   return (
     <div className="pt-24 pb-20 bg-white">
       <SEOHead
-        title="StudPal Web Application Case Study | KGtech Nexus"
-        description="Comprehensive case study on StudPal, a personalized study companion and productivity web application engineered by KGtech Nexus."
+        title="StudPal Web Application Case Study | SiteNoble"
+        description="Comprehensive case study on StudPal, a personalized study companion and productivity web application engineered by SiteNoble."
         canonicalPath="/projects/studpal"
         schema={studpalSchema}
       />
@@ -93,7 +93,7 @@ export const StudPalCaseStudy: React.FC = () => {
           <div className="pt-6 pb-8 border-y border-slate-100 grid grid-cols-2 sm:grid-cols-4 gap-6 text-xs">
             <div>
               <span className="text-slate-400 uppercase tracking-wider block mb-1">Agency &amp; Role</span>
-              <span className="font-semibold text-slate-900">KGtech Nexus (Praise, Lead Dev)</span>
+              <span className="font-semibold text-slate-900">SiteNoble (Praise, Lead Dev)</span>
             </div>
             <div>
               <span className="text-slate-400 uppercase tracking-wider block mb-1">Timeline</span>

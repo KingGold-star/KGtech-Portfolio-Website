@@ -1,6 +1,6 @@
 // Persistent media storage for client testimonies using IndexedDB
 
-const DB_NAME = 'kgtech_testimonials_media_db';
+const DB_NAME = 'sitenoble_testimonials_media_db';
 const STORE_NAME = 'media_blobs';
 const DB_VERSION = 1;
 

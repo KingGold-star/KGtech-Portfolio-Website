@@ -147,18 +147,18 @@ export const HomePage: React.FC = () => {
   const homepageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'KGtech Nexus',
-    url: 'https://kgtechnexus.com',
+    name: 'SiteNoble',
+    url: 'https://sitenoble.com',
     description: 'Web Development & Digital Solutions Agency',
     publisher: {
       '@type': 'Organization',
-      name: 'KGtech Nexus',
-      url: 'https://kgtechnexus.com',
-      logo: 'https://kgtechnexus.com/favicon.png'
+      name: 'SiteNoble',
+      url: 'https://sitenoble.com',
+      logo: 'https://sitenoble.com/favicon.png'
     },
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://kgtechnexus.com/services?q={search_term_string}',
+      target: 'https://sitenoble.com/services?q={search_term_string}',
       'query-input': 'required name=search_term_string'
     }
   };
@@ -166,8 +166,8 @@ export const HomePage: React.FC = () => {
   return (
     <div className="bg-white">
       <SEOHead
-        title="KGtech Nexus | Web Development & Digital Solutions Agency"
-        description="KGtech Nexus designs and develops professional websites, web applications, and digital experiences that help businesses strengthen their online presence."
+        title="SiteNoble | Web Development & Digital Solutions Agency"
+        description="SiteNoble designs and develops professional websites, web applications, and digital experiences that help businesses strengthen their online presence."
         canonicalPath="/"
         schema={homepageSchema}
       />
@@ -201,7 +201,7 @@ export const HomePage: React.FC = () => {
                 What We Can Help You Build
               </h2>
               <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
-                From a business website that establishes credibility to a fully functional web application, KGtech Nexus brings design and development together to create digital solutions with purpose.
+                From a business website that establishes credibility to a fully functional web application, SiteNoble brings design and development together to create digital solutions with purpose.
               </p>
             </div>
           </ScrollReveal>
@@ -333,7 +333,7 @@ export const HomePage: React.FC = () => {
                         Lead Web Developer &amp; UI/UX Architect
                       </p>
                       <p className="text-[11px] font-semibold text-[#2D62FF] mt-0.5">
-                        KGtech Nexus Agency
+                        SiteNoble Agency
                       </p>
                       
                       <span className="mt-2.5 inline-block px-3 py-1 rounded-md bg-slate-50 border border-slate-200 text-[11px] text-slate-600 font-medium">
@@ -351,12 +351,12 @@ export const HomePage: React.FC = () => {
               </ScrollReveal>
             </div>
 
-            {/* Right: Exact Copy from Section 05 adapted for KGtech Nexus & Praise */}
+            {/* Right: Exact Copy from Section 05 adapted for SiteNoble & Praise */}
             <div className="lg:col-span-7 space-y-6 text-left">
               <ScrollReveal direction="right" distance={36} duration={800}>
                 <div className="space-y-6">
                   <span className="text-xs font-semibold uppercase tracking-wider text-[#2D62FF] block">
-                    About KGtech Nexus &amp; Leadership
+                    About SiteNoble &amp; Leadership
                   </span>
 
                   <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-[#0B0B0F] leading-tight">
@@ -365,7 +365,7 @@ export const HomePage: React.FC = () => {
 
                   <div className="space-y-4 text-base sm:text-lg text-slate-600 leading-relaxed">
                     <p>
-                      At <strong className="text-slate-900 font-semibold">KGtech Nexus</strong>, we bridge the gap between creative visual design and robust software engineering.
+                      At <strong className="text-slate-900 font-semibold">SiteNoble</strong>, we bridge the gap between creative visual design and robust software engineering.
                     </p>
                     <p>
                       At the core of the agency is <strong className="text-slate-900 font-semibold">Praise Egburedi</strong>, who directs our web development and UI/UX design architecture. Praise's engineering philosophy drives every project we ship:
@@ -374,7 +374,7 @@ export const HomePage: React.FC = () => {
                       "Our approach starts with understanding the problem, the people using the product, and the outcome the business wants to achieve. We then translate those requirements into clear interfaces, responsive experiences, and maintainable implementations."
                     </p>
                     <p>
-                      Whether KGtech Nexus is delivering a high-converting corporate website or developing a sophisticated web application, our standard remains uncompromising: purposeful design, reliable functionality, and relentless attention to detail.
+                      Whether SiteNoble is delivering a high-converting corporate website or developing a sophisticated web application, our standard remains uncompromising: purposeful design, reliable functionality, and relentless attention to detail.
                     </p>
                   </div>
 
@@ -432,7 +432,7 @@ export const HomePage: React.FC = () => {
                 Tools Behind the Experience
               </h2>
               <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
-                At KGtech Nexus, we use modern web technologies and robust development workflows to build responsive, maintainable, and scalable digital products.
+                At SiteNoble, we use modern web technologies and robust development workflows to build responsive, maintainable, and scalable digital products.
               </p>
             </div>
           </ScrollReveal>
@@ -685,7 +685,7 @@ export const HomePage: React.FC = () => {
         <ScrollReveal direction="up" distance={32} duration={800}>
           <div className="max-w-5xl mx-auto px-6 md:px-8 text-center relative z-10 space-y-6">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#2D62FF] block">
-              Let's Collaborate with KGtech Nexus
+              Let's Collaborate with SiteNoble
             </span>
 
             <h2 
@@ -699,7 +699,7 @@ export const HomePage: React.FC = () => {
               className="text-base sm:text-lg max-w-2xl mx-auto leading-relaxed"
               style={{ color: '#59677e' }}
             >
-              Whether you're building a new web application, modernizing an existing business site, or seeking technical direction for your digital product, let's discuss what KGtech Nexus and Praise can engineer for you.
+              Whether you're building a new web application, modernizing an existing business site, or seeking technical direction for your digital product, let's discuss what SiteNoble and Praise can engineer for you.
             </p>
 
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -712,14 +712,14 @@ export const HomePage: React.FC = () => {
               </button>
 
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=egburedipraise@gmail.com&su=Project%20Inquiry%20%E2%80%93%20KGtech%20Nexus&body=Hello%20Praise%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.%0A%0A"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=egburedipraise@gmail.com&su=Project%20Inquiry%20%E2%80%93%20SiteNoble%20Nexus&body=Hello%20Praise%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.%0A%0A"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackEvent('contact_email_click', { source: 'closing_section' })}
                 className="btn-glass-dark w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 text-base font-medium text-slate-200 hover:text-white rounded-2xl cursor-pointer"
               >
                 <Mail className="w-4 h-4 text-slate-400" />
-                <span>Email Praise &amp; KGtech Nexus</span>
+                <span>Email Praise &amp; SiteNoble</span>
               </a>
             </div>
           </div>

@@ -37,13 +37,13 @@ function generateCV() {
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(10);
   doc.setTextColor(...primaryBlue);
-  doc.text('Lead Web Developer & UI/UX Architect  |  KGtech Nexus', margin, y + 13);
+  doc.text('Lead Web Developer & UI/UX Architect  |  SiteNoble', margin, y + 13);
 
   // Contact line
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(8.5);
   doc.setTextColor(...mutedText);
-  doc.text('egburedipraise@gmail.com   *   Agency: KGtech Nexus   *   Available Worldwide', margin, y + 18);
+  doc.text('egburedipraise@gmail.com   *   Agency: SiteNoble   *   Available Worldwide', margin, y + 18);
 
   y += 22;
 
@@ -57,7 +57,7 @@ function generateCV() {
   doc.setFont('helvetica', 'italic');
   doc.setFontSize(8.5);
   doc.setTextColor(...darkText);
-  const summary = 'At KGtech Nexus, we design and build digital experiences that move businesses forward. With Praise Egburedi directing web development and UI/UX architecture, we help founders and growing enterprises establish commanding digital presence through high-performance websites, intuitive interfaces, and scalable web applications.';
+  const summary = 'At SiteNoble, we design and build digital experiences that move businesses forward. With Praise Egburedi directing web development and UI/UX architecture, we help founders and growing enterprises establish commanding digital presence through high-performance websites, intuitive interfaces, and scalable web applications.';
   const summaryLines = doc.splitTextToSize(summary, contentWidth);
   doc.text(summaryLines, margin, y);
   y += summaryLines.length * 4.2 + 4;
@@ -240,7 +240,7 @@ function generateCV() {
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(7);
   doc.setTextColor(...mutedText);
-  doc.text('Praise Egburedi  *  KGtech Nexus  *  Generated from live portfolio', margin, pageHeight - 8);
+  doc.text('Praise Egburedi  *  SiteNoble  *  Generated from live portfolio', margin, pageHeight - 8);
   doc.text('contact@praiseegburedi.dev', margin + contentWidth - 36, pageHeight - 8);
 
   const outDir = path.join(__dirname, '..', 'public', 'downloads');

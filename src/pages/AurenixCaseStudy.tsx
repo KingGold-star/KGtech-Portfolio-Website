@@ -25,9 +25,9 @@ export const AurenixCaseStudy: React.FC = () => {
     '@graph': [
       {
         '@type': 'WebPage',
-        name: 'Aurenix Research Platform Case Study | KGtech Nexus',
-        description: 'Case study on the design and frontend engineering of Aurenix Research Platform by KGtech Nexus, featuring complex data visualizations.',
-        url: 'https://kgtechnexus.com/projects/aurenix'
+        name: 'Aurenix Research Platform Case Study | SiteNoble',
+        description: 'Case study on the design and frontend engineering of Aurenix Research Platform by SiteNoble, featuring complex data visualizations.',
+        url: 'https://sitenoble.com/projects/aurenix'
       },
       {
         '@type': 'BreadcrumbList',
@@ -36,13 +36,13 @@ export const AurenixCaseStudy: React.FC = () => {
             '@type': 'ListItem',
             position: 1,
             name: 'Home',
-            item: 'https://kgtechnexus.com'
+            item: 'https://sitenoble.com'
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'Aurenix Research Case Study',
-            item: 'https://kgtechnexus.com/projects/aurenix'
+            item: 'https://sitenoble.com/projects/aurenix'
           }
         ]
       }
@@ -52,8 +52,8 @@ export const AurenixCaseStudy: React.FC = () => {
   return (
     <div className="pt-24 pb-20 bg-white">
       <SEOHead
-        title="Aurenix Research Platform Case Study | KGtech Nexus"
-        description="Case study on the design and frontend engineering of Aurenix Research Platform by KGtech Nexus, featuring complex data visualizations."
+        title="Aurenix Research Platform Case Study | SiteNoble"
+        description="Case study on the design and frontend engineering of Aurenix Research Platform by SiteNoble, featuring complex data visualizations."
         canonicalPath="/projects/aurenix"
         schema={aurenixSchema}
       />
@@ -93,7 +93,7 @@ export const AurenixCaseStudy: React.FC = () => {
           <div className="pt-6 pb-8 border-y border-slate-100 grid grid-cols-2 sm:grid-cols-4 gap-6 text-xs">
             <div>
               <span className="text-slate-400 uppercase tracking-wider block mb-1">Agency &amp; Role</span>
-              <span className="font-semibold text-slate-900">KGtech Nexus (Praise, Lead Dev)</span>
+              <span className="font-semibold text-slate-900">SiteNoble (Praise, Lead Dev)</span>
             </div>
             <div>
               <span className="text-slate-400 uppercase tracking-wider block mb-1">Domain</span>
