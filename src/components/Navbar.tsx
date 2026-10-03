@@ -15,64 +15,123 @@ export const Navbar: React.FC = () => {
 
   const [activeSection, setActiveSection] = useState<string>('Home');
 
+  const isLinkActive = (link: { label: string; href: string }) => {
+    if (currentPath === '/') {
+      return activeSection === link.label;
+    }
+    if (link.href === '/services' && currentPath.startsWith('/services')) return true;
+    if (link.href === '/insights' && currentPath.startsWith('/insights')) return true;
+    if (link.href === '/resume' && currentPath.startsWith('/resume')) return true;
+    return activeSection === link.label;
+  };
+
   useEffect(() => {
     let ticking = false;
 
-    const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          const currentY = window.scrollY;
-          setIsScrolled((prev) => {
-            // Hysteresis threshold to eliminate chatter/jitter around the transition point
-            if (!prev && currentY > 30) return true;
-            if (prev && currentY < 12) return false;
-            return prev;
-          });
+    const updateActiveState = () => {
+      const currentY = window.scrollY;
+      setIsScrolled((prev) => {
+        // Hysteresis threshold to eliminate chatter/jitter around the transition point
+        if (!prev && currentY > 30) return true;
+        if (prev && currentY < 12) return false;
+        return prev;
+      });
 
-          // Scroll Spy for active section highlighting on homepage
-          if (currentPath === '/') {
-            if (currentY < 200) {
-              setActiveSection('Home');
-            } else if (window.innerHeight + currentY >= document.documentElement.scrollHeight - 80) {
-              setActiveSection('FAQ');
-            } else {
-              const scrollYOffset = currentY + 180;
-              const sections = [
-                { id: 'faq', label: 'FAQ' },
-                { id: 'expertise', label: 'Tech Stack' },
-                { id: 'testimonials', label: 'Testimonials' },
-                { id: 'pricing', label: 'Pricing' },
-                { id: 'about', label: 'About me' },
-                { id: 'services', label: 'Services' },
-              ];
+      // Scroll Spy for active section highlighting on homepage
+      if (currentPath === '/') {
+        if (currentY < 180) {
+          setActiveSection('Home');
+        } else {
+          // Check if reached very bottom of page
+          const isAtBottom = window.innerHeight + currentY >= document.documentElement.scrollHeight - 60;
+          if (isAtBottom) {
+            setActiveSection('FAQ');
+          } else {
+            // Priority ordered sections from top to bottom
+            const sections = [
+              { id: 'faq', label: 'FAQ' },
+              { id: 'testimonials', label: 'Testimonials' },
+              { id: 'pricing', label: 'Pricing' },
+              { id: 'about', label: 'About' },
+              { id: 'services', label: 'Services' },
+            ];
 
-              let matched = 'Home';
-              for (const sec of sections) {
-                const el = document.getElementById(sec.id);
-                if (el && scrollYOffset >= el.offsetTop) {
+            const viewportFocus = 140;
+            let matched = 'Home';
+
+            for (const sec of sections) {
+              const el = document.getElementById(sec.id);
+              if (el) {
+                const rect = el.getBoundingClientRect();
+                // Element is spanning across the viewport focus line
+                if (rect.top <= viewportFocus && rect.bottom > viewportFocus) {
                   matched = sec.label;
                   break;
                 }
               }
-              setActiveSection(matched);
             }
-          } else {
-            setActiveSection('');
-          }
 
+            // If between section gaps, match the closest visible section
+            if (matched === 'Home' && currentY >= 180) {
+              let bestSec = 'Services';
+              let minDistance = Infinity;
+              for (const sec of sections) {
+                const el = document.getElementById(sec.id);
+                if (el) {
+                  const rect = el.getBoundingClientRect();
+                  if (rect.top <= viewportFocus + 260 && rect.bottom > 0) {
+                    const dist = Math.abs(rect.top - viewportFocus);
+                    if (dist < minDistance) {
+                      minDistance = dist;
+                      bestSec = sec.label;
+                    }
+                  }
+                }
+              }
+              matched = bestSec;
+            }
+
+            setActiveSection(matched);
+          }
+        }
+      } else {
+        if (currentPath.startsWith('/services')) {
+          setActiveSection('Services');
+        } else if (currentPath.startsWith('/insights')) {
+          setActiveSection('Insights');
+        } else if (currentPath.startsWith('/resume')) {
+          setActiveSection('About');
+        } else {
+          setActiveSection('');
+        }
+      }
+    };
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          updateActiveState();
           ticking = false;
         });
         ticking = true;
       }
     };
 
-    if (currentPath !== '/') {
+    if (currentPath.startsWith('/services')) {
+      setActiveSection('Services');
+    } else if (currentPath.startsWith('/insights')) {
+      setActiveSection('Insights');
+    } else if (currentPath.startsWith('/resume')) {
+      setActiveSection('About');
+    } else if (currentPath === '/') {
+      setActiveSection('Home');
+    } else {
       setActiveSection('');
     }
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     // Check initial state on mount
-    handleScroll();
+    updateActiveState();
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, [currentPath]);
@@ -86,11 +145,10 @@ export const Navbar: React.FC = () => {
     setMobileMenuOpen(false);
 
     if (href === '/') {
+      setActiveSection('Home');
       if (currentPath !== '/') {
-        setActiveSection('Home');
         navigate('/');
       } else {
-        setActiveSection('Home');
         window.scrollTo({ top: 0, behavior: 'smooth' });
         try {
           window.history.pushState(null, '', '/');
@@ -110,6 +168,7 @@ export const Navbar: React.FC = () => {
         } catch {}
       }
     } else {
+      setActiveSection(label);
       navigate(href);
     }
   };
@@ -152,7 +211,7 @@ export const Navbar: React.FC = () => {
           {/* Zone 2: Clean text navigation links with interactive hover & active effects */}
           <nav className="hidden md:flex items-center gap-1 lg:gap-1.5 xl:gap-2 text-[13px] lg:text-[14px] xl:text-[14.5px] font-medium text-slate-700">
             {navLinks.map((link) => {
-              const isActive = currentPath === '/' && activeSection === link.label;
+              const isActive = isLinkActive(link);
 
               return (
                 <a
@@ -221,7 +280,7 @@ export const Navbar: React.FC = () => {
           <div className="md:hidden pointer-events-auto mt-2 bg-white/95 backdrop-blur-md rounded-2xl border border-slate-200/90 shadow-xl px-6 py-6 space-y-4 animate-in fade-in duration-200">
             <div className="flex flex-col space-y-1.5">
               {navLinks.map((link) => {
-                const isActive = currentPath === '/' && activeSection === link.label;
+                const isActive = isLinkActive(link);
                 return (
                   <a
                     key={link.label}
