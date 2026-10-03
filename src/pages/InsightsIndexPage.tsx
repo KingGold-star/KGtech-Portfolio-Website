@@ -48,6 +48,15 @@ export const InsightsIndexPage: React.FC = () => {
       <SEOHead
         title="Insights & Web Engineering Articles | SiteNoble"
         description="Technical insights, web performance audits, UI/UX principles, and digital product strategies by Praise Egburedi and SiteNoble."
+        keywords={[
+          'Web Development Blog',
+          'Web Engineering Insights',
+          'UI/UX Design Best Practices',
+          'Web Performance Optimization',
+          'SaaS Architecture Guides',
+          'SiteNoble Insights',
+          'Praise Egburedi Articles'
+        ]}
         canonicalPath="/insights"
         schema={schema}
       />

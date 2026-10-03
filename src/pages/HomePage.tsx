@@ -167,7 +167,24 @@ export const HomePage: React.FC = () => {
     <div className="bg-white">
       <SEOHead
         title="SiteNoble | Web Development & Digital Solutions Agency"
-        description="SiteNoble designs and develops professional websites, web applications, and digital experiences that help businesses strengthen their online presence."
+        description="SiteNoble designs and develops high-performance websites, custom web applications, SaaS platforms, and AI-integrated digital solutions that help businesses scale globally."
+        keywords={[
+          'Web Development Agency',
+          'Web Development Services',
+          'Digital Solutions Agency',
+          'Website Development Company',
+          'Professional Website Design',
+          'Custom Web Development',
+          'Business Website Development',
+          'Landing Page Design',
+          'Web Application Development',
+          'Website Redesign Services',
+          'UI/UX Design Services',
+          'E-commerce Website Development',
+          'SaaS Development Company',
+          'AI Integration Services',
+          'SiteNoble'
+        ]}
         canonicalPath="/"
         schema={homepageSchema}
       />

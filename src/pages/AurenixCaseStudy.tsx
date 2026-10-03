@@ -54,6 +54,13 @@ export const AurenixCaseStudy: React.FC = () => {
       <SEOHead
         title="Aurenix Research Platform Case Study | SiteNoble"
         description="Case study on the design and frontend engineering of Aurenix Research Platform by SiteNoble, featuring complex data visualizations."
+        keywords={[
+          'Aurenix Research Case Study',
+          'Data Visualization Web App',
+          'React Scientific Platform',
+          'UI/UX Architecture Case Study',
+          'SiteNoble Case Studies'
+        ]}
         canonicalPath="/projects/aurenix"
         schema={aurenixSchema}
       />

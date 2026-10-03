@@ -74,6 +74,14 @@ export const ResumePage: React.FC = () => {
       <SEOHead
         title="Praise Egburedi – Lead Web Developer & UI/UX Architect | SiteNoble"
         description="Professional background, technical stack, and verified experience of Praise Egburedi, Lead Web Developer and UI/UX Architect at SiteNoble."
+        keywords={[
+          'Praise Egburedi',
+          'Lead Web Developer',
+          'UI UX Architect',
+          'Full Stack Frontend Engineer',
+          'React Developer Portfolio',
+          'SiteNoble Founder'
+        ]}
         canonicalPath="/resume"
         schema={personSchema}
       />

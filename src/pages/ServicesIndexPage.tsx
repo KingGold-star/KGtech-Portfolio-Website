@@ -57,6 +57,16 @@ export const ServicesIndexPage: React.FC = () => {
       <SEOHead
         title="Web Development & Digital Product Services | SiteNoble"
         description="Explore custom web development, UI/UX design, SaaS engineering, e-commerce, and AI integration services by SiteNoble. Engineered for high performance."
+        keywords={[
+          'Web Development Services',
+          'Custom Web Development Agency',
+          'UI/UX Design Agency',
+          'SaaS Product Development',
+          'E-commerce Website Development',
+          'AI Integration Services',
+          'Website Redesign Services',
+          'SiteNoble Services'
+        ]}
         canonicalPath="/services"
         schema={schema}
       />

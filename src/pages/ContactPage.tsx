@@ -41,6 +41,13 @@ export const ContactPage: React.FC = () => {
       <SEOHead
         title="Start a Project & Contact SiteNoble | Web Development Agency"
         description="Ready to build your next web application or high-converting website? Get in touch with Praise and SiteNoble for project scoping and estimates."
+        keywords={[
+          'Contact Web Development Agency',
+          'Hire Web Developer',
+          'Web Design Project Inquiry',
+          'Custom Software Agency Contact',
+          'SiteNoble Contact'
+        ]}
         canonicalPath="/contact"
         schema={contactSchema}
       />

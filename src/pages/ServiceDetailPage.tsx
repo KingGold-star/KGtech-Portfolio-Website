@@ -105,6 +105,14 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ slug }) =>
       <SEOHead
         title={service.metaTitle}
         description={service.metaDescription}
+        keywords={[
+          service.title,
+          service.shortTitle,
+          service.category,
+          ...service.technologies,
+          'SiteNoble Web Agency',
+          'Professional Web Development'
+        ]}
         canonicalPath={`/services/${service.slug}`}
         schema={schema}
       />

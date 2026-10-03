@@ -100,7 +100,19 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://sitenoble.com/work/studpal</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://sitenoble.com/projects/aurenix</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://sitenoble.com/work/aurenix</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>

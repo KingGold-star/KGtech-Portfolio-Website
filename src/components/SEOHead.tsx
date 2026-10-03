@@ -8,6 +8,8 @@ import React, { useEffect } from 'react';
 export interface SEOHeadProps {
   title: string;
   description: string;
+  keywords?: string[] | string;
+  author?: string;
   canonicalPath?: string;
   ogType?: 'website' | 'article';
   ogImage?: string;
@@ -21,6 +23,8 @@ const DEFAULT_OG_IMAGE = `${BASE_URL}/images/praise_portrait.png`;
 export const SEOHead: React.FC<SEOHeadProps> = ({
   title,
   description,
+  keywords,
+  author = 'SiteNoble & Praise Egburedi',
   canonicalPath = '/',
   ogType = 'website',
   ogImage = DEFAULT_OG_IMAGE,
@@ -59,6 +63,13 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
 
     // 3. Standard SEO Meta Tags
     setMetaTag('name', 'description', description);
+    if (keywords) {
+      const kwStr = Array.isArray(keywords) ? keywords.join(', ') : keywords;
+      setMetaTag('name', 'keywords', kwStr);
+    }
+    if (author) {
+      setMetaTag('name', 'author', author);
+    }
     setMetaTag('name', 'robots', noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
     setMetaTag('name', 'googlebot', noindex ? 'noindex, nofollow' : 'index, follow');
 
@@ -77,6 +88,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     setMetaTag('name', 'twitter:description', description);
     setMetaTag('name', 'twitter:image', ogImage.startsWith('http') ? ogImage : `${BASE_URL}${ogImage}`);
     setMetaTag('name', 'twitter:creator', '@SiteNobleNexus');
+    setMetaTag('name', 'twitter:site', '@SiteNobleNexus');
 
     // 6. Dynamic JSON-LD Structured Data
     if (schema) {
@@ -89,7 +101,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       }
       scriptTag.textContent = JSON.stringify(schema);
     }
-  }, [title, description, canonicalPath, ogType, ogImage, schema, noindex]);
+  }, [title, description, keywords, author, canonicalPath, ogType, ogImage, schema, noindex]);
 
   return null;
 };

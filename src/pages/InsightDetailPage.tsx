@@ -103,6 +103,13 @@ export const InsightDetailPage: React.FC<InsightDetailPageProps> = ({ slug }) =>
       <SEOHead
         title={article.metaTitle}
         description={article.metaDescription}
+        keywords={[
+          article.title,
+          article.category,
+          ...article.keyTakeaways.slice(0, 3),
+          'SiteNoble Technical Insights',
+          'Web Development Best Practices'
+        ]}
         canonicalPath={`/insights/${article.slug}`}
         ogType="article"
         schema={schema}

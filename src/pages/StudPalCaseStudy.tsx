@@ -54,6 +54,13 @@ export const StudPalCaseStudy: React.FC = () => {
       <SEOHead
         title="StudPal Web Application Case Study | SiteNoble"
         description="Comprehensive case study on StudPal, a personalized study companion and productivity web application engineered by SiteNoble."
+        keywords={[
+          'StudPal Case Study',
+          'Web Application Engineering',
+          'React Productivity Platform',
+          'Interactive Web Apps',
+          'SiteNoble Case Studies'
+        ]}
         canonicalPath="/projects/studpal"
         schema={studpalSchema}
       />
