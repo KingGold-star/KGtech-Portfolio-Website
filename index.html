@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2D62FF" />
+    
+    <script>
+      // Ensure window.fetch has both a getter and setter to prevent "Cannot set property fetch of #<Window> which has only a getter"
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          var activeFetch = originalFetch ? originalFetch.bind(window) : null;
+          
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return activeFetch;
+            },
+            set: function(newFetch) {
+              activeFetch = newFetch;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          try {
+            var proto = Object.getPrototypeOf(window);
+            if (proto) {
+              Object.defineProperty(proto, 'fetch', {
+                get: function() { return activeFetch; },
+                set: function(newFetch) { activeFetch = newFetch; },
+                configurable: true,
+                enumerable: true
+              });
+            }
+          } catch (_) {}
+        }
+      })();
+    </script>
+    
+    <!-- Primary Identity & Canonical -->
+    <title>KGtech Nexus | Web Development &amp; Digital Solutions Agency</title>
+    <meta name="description" content="KGtech Nexus designs and develops professional websites, web applications, and digital experiences that help businesses strengthen their online presence globally." />
+    <link rel="canonical" href="https://kgtechnexus.com/" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- Favicon & Touch Icons -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    
+    <!-- OpenGraph Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="KGtech Nexus" />
+    <meta property="og:title" content="KGtech Nexus | Web Development &amp; Digital Solutions Agency" />
+    <meta property="og:description" content="KGtech Nexus designs and develops professional websites, web applications, and digital experiences that help businesses strengthen their online presence." />
+    <meta property="og:url" content="https://kgtechnexus.com/" />
+    <meta property="og:image" content="https://kgtechnexus.com/images/praise_portrait.png" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@KGtechNexus" />
+    <meta name="twitter:creator" content="@KGtechNexus" />
+    <meta name="twitter:title" content="KGtech Nexus | Web Development &amp; Digital Solutions Agency" />
+    <meta name="twitter:description" content="KGtech Nexus designs and develops professional websites, web applications, and digital experiences that help businesses strengthen their online presence." />
+    <meta name="twitter:image" content="https://kgtechnexus.com/images/praise_portrait.png" />
+
+    <!-- Google Fonts: Inter with display=swap for Core Web Vitals optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Global Entity Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://kgtechnexus.com/#organization",
+          "name": "KGtech Nexus",
+          "url": "https://kgtechnexus.com",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://kgtechnexus.com/#logo",
+            "url": "https://kgtechnexus.com/favicon.png",
+            "caption": "KGtech Nexus Agency"
+          },
+          "image": "https://kgtechnexus.com/images/praise_portrait.png",
+          "description": "KGtech Nexus is a modern web development, UI/UX architecture, and digital solutions agency crafting high-performance websites and web applications.",
+          "founder": {
+            "@type": "Person",
+            "@id": "https://kgtechnexus.com/#founder",
+            "name": "Praise Egburedi",
+            "jobTitle": "Lead Web Developer & UI/UX Architect",
+            "url": "https://kgtechnexus.com/resume"
+          },
+          "sameAs": [
+            "https://github.com/PraiseEgburedi"
+          ],
+          "knowsAbout": [
+            "Web Development",
+            "Business Website Development",
+            "Frontend Development",
+            "UI/UX Design",
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Web Applications",
+            "SaaS Development",
+            "AI Integration",
+            "E-Commerce Website Development"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://kgtechnexus.com/#website",
+          "url": "https://kgtechnexus.com",
+          "name": "KGtech Nexus",
+          "description": "Web Development & Digital Solutions Agency",
+          "publisher": {
+            "@id": "https://kgtechnexus.com/#organization"
+          },
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-white text-[#0B0B0F] antialiased selection:bg-[#2D62FF]/10 selection:text-[#2D62FF]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

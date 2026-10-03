@@ -1,0 +1,95 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import React, { useEffect } from 'react';
+
+export interface SEOHeadProps {
+  title: string;
+  description: string;
+  canonicalPath?: string;
+  ogType?: 'website' | 'article';
+  ogImage?: string;
+  schema?: Record<string, unknown> | Array<Record<string, unknown>>;
+  noindex?: boolean;
+}
+
+const BASE_URL = 'https://kgtechnexus.com';
+const DEFAULT_OG_IMAGE = `${BASE_URL}/images/praise_portrait.png`;
+
+export const SEOHead: React.FC<SEOHeadProps> = ({
+  title,
+  description,
+  canonicalPath = '/',
+  ogType = 'website',
+  ogImage = DEFAULT_OG_IMAGE,
+  schema,
+  noindex = false
+}) => {
+  useEffect(() => {
+    // 1. Update Title
+    document.title = title;
+
+    // Helper to update or create meta tags
+    const setMetaTag = (attr: 'name' | 'property', key: string, content: string) => {
+      let element = document.querySelector(`meta[${attr}="${key}"]`);
+      if (!element) {
+        element = document.createElement('meta');
+        element.setAttribute(attr, key);
+        document.head.appendChild(element);
+      }
+      element.setAttribute('content', content);
+    };
+
+    // Helper to update or create link tags
+    const setLinkTag = (rel: string, href: string) => {
+      let element = document.querySelector(`link[rel="${rel}"]`);
+      if (!element) {
+        element = document.createElement('link');
+        element.setAttribute('rel', rel);
+        document.head.appendChild(element);
+      }
+      element.setAttribute('href', href);
+    };
+
+    // 2. Canonical URL
+    const canonicalUrl = `${BASE_URL}${canonicalPath.startsWith('/') ? canonicalPath : `/${canonicalPath}`}`;
+    setLinkTag('canonical', canonicalUrl);
+
+    // 3. Standard SEO Meta Tags
+    setMetaTag('name', 'description', description);
+    setMetaTag('name', 'robots', noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+    setMetaTag('name', 'googlebot', noindex ? 'noindex, nofollow' : 'index, follow');
+
+    // 4. OpenGraph Metadata
+    setMetaTag('property', 'og:title', title);
+    setMetaTag('property', 'og:description', description);
+    setMetaTag('property', 'og:url', canonicalUrl);
+    setMetaTag('property', 'og:type', ogType);
+    setMetaTag('property', 'og:site_name', 'KGtech Nexus');
+    setMetaTag('property', 'og:image', ogImage.startsWith('http') ? ogImage : `${BASE_URL}${ogImage}`);
+    setMetaTag('property', 'og:locale', 'en_US');
+
+    // 5. Twitter Card Metadata
+    setMetaTag('name', 'twitter:card', 'summary_large_image');
+    setMetaTag('name', 'twitter:title', title);
+    setMetaTag('name', 'twitter:description', description);
+    setMetaTag('name', 'twitter:image', ogImage.startsWith('http') ? ogImage : `${BASE_URL}${ogImage}`);
+    setMetaTag('name', 'twitter:creator', '@KGtechNexus');
+
+    // 6. Dynamic JSON-LD Structured Data
+    if (schema) {
+      let scriptTag = document.getElementById('dynamic-seo-schema') as HTMLScriptElement | null;
+      if (!scriptTag) {
+        scriptTag = document.createElement('script');
+        scriptTag.id = 'dynamic-seo-schema';
+        scriptTag.type = 'application/ld+json';
+        document.head.appendChild(scriptTag);
+      }
+      scriptTag.textContent = JSON.stringify(schema);
+    }
+  }, [title, description, canonicalPath, ogType, ogImage, schema, noindex]);
+
+  return null;
+};
