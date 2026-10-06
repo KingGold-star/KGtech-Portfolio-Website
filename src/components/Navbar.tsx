@@ -19,9 +19,9 @@ export const Navbar: React.FC = () => {
     if (currentPath === '/') {
       return activeSection === link.label;
     }
-    if (link.href === '/services' && currentPath.startsWith('/services')) return true;
-    if (link.href === '/insights' && currentPath.startsWith('/insights')) return true;
-    if (link.href === '/resume' && currentPath.startsWith('/resume')) return true;
+    if (link.label === 'Services' && currentPath.startsWith('/services')) return true;
+    if (link.label === 'Insights' && currentPath.startsWith('/insights')) return true;
+    if (link.label === 'About' && currentPath.startsWith('/resume')) return true;
     return activeSection === link.label;
   };
 
@@ -175,11 +175,11 @@ export const Navbar: React.FC = () => {
 
   const navLinks = [
     { label: 'Home', href: '/' },
-    { label: 'Services', href: '/services' },
-    { label: 'Insights', href: '/insights' },
+    { label: 'Services', href: '#services' },
+    { label: 'About', href: '#about' },
     { label: 'Pricing', href: '#pricing' },
     { label: 'Testimonials', href: '#testimonials' },
-    { label: 'About', href: '/resume' },
+    { label: 'Insights', href: '/insights' },
     { label: 'FAQ', href: '#faq' },
   ];
 
