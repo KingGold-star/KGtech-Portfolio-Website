@@ -3,21 +3,23 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { RouterProvider, useRouter } from './context/RouterContext';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { ScrollProgress } from './components/ScrollProgress';
 import { HomePage } from './pages/HomePage';
-import { ServicesIndexPage } from './pages/ServicesIndexPage';
-import { ServiceDetailPage } from './pages/ServiceDetailPage';
-import { InsightsIndexPage } from './pages/InsightsIndexPage';
-import { InsightDetailPage } from './pages/InsightDetailPage';
-import { StudPalCaseStudy } from './pages/StudPalCaseStudy';
-import { AurenixCaseStudy } from './pages/AurenixCaseStudy';
-import { ContactPage } from './pages/ContactPage';
-import { ResumePage } from './pages/ResumePage';
-import { NotFoundPage } from './pages/NotFoundPage';
+
+// Code-split subpages so the initial homepage bundle is featherweight & loads instantly
+const ServicesIndexPage = lazy(() => import('./pages/ServicesIndexPage').then(m => ({ default: m.ServicesIndexPage })));
+const ServiceDetailPage = lazy(() => import('./pages/ServiceDetailPage').then(m => ({ default: m.ServiceDetailPage })));
+const InsightsIndexPage = lazy(() => import('./pages/InsightsIndexPage').then(m => ({ default: m.InsightsIndexPage })));
+const InsightDetailPage = lazy(() => import('./pages/InsightDetailPage').then(m => ({ default: m.InsightDetailPage })));
+const StudPalCaseStudy = lazy(() => import('./pages/StudPalCaseStudy').then(m => ({ default: m.StudPalCaseStudy })));
+const AurenixCaseStudy = lazy(() => import('./pages/AurenixCaseStudy').then(m => ({ default: m.AurenixCaseStudy })));
+const ContactPage = lazy(() => import('./pages/ContactPage').then(m => ({ default: m.ContactPage })));
+const ResumePage = lazy(() => import('./pages/ResumePage').then(m => ({ default: m.ResumePage })));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage').then(m => ({ default: m.NotFoundPage })));
 
 const AppContent: React.FC = () => {
   const { currentPath } = useRouter();
@@ -72,7 +74,9 @@ const AppContent: React.FC = () => {
       <ScrollProgress />
       <Navbar />
       <main className="flex-1">
-        {renderCurrentView()}
+        <Suspense fallback={<div className="min-h-screen bg-white" />}>
+          {renderCurrentView()}
+        </Suspense>
       </main>
       <Footer />
     </div>

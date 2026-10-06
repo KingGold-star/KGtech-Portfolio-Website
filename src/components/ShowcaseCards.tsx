@@ -13,12 +13,16 @@ export const ShowcaseCards: React.FC = () => {
         <div className="w-full bg-white rounded-2xl sm:rounded-3xl p-3.5 sm:p-4 shadow-[0_14px_36px_rgba(0,0,0,0.08)] border border-slate-100 group-hover:shadow-[0_20px_44px_rgba(45,98,255,0.16)] transition-all duration-300">
           {/* Showcase Preview Image */}
           <div className="rounded-xl sm:rounded-2xl h-36 sm:h-44 xl:h-48 flex items-center justify-center relative overflow-hidden bg-slate-100 border border-slate-100/80">
-            <img 
-              src="/images/card1_showcase.png" 
-              alt="UI/UX Design Showcase" 
-              className="w-full h-full object-cover object-top rounded-xl sm:rounded-2xl transition-transform duration-300 group-hover:scale-105"
-              loading="lazy"
-            />
+            <picture>
+              <source srcSet="/images/card1_showcase.webp" type="image/webp" />
+              <img 
+                src="/images/card1_showcase.png" 
+                alt="UI/UX Design Showcase" 
+                className="w-full h-full object-cover object-top rounded-xl sm:rounded-2xl transition-transform duration-300 group-hover:scale-105"
+                loading="eager"
+                decoding="async"
+              />
+            </picture>
           </div>
         </div>
 
@@ -39,12 +43,16 @@ export const ShowcaseCards: React.FC = () => {
         <div className="w-full bg-white rounded-2xl sm:rounded-3xl p-3.5 sm:p-4 shadow-[0_14px_36px_rgba(0,0,0,0.08)] border border-slate-100 group-hover:shadow-[0_20px_44px_rgba(45,98,255,0.16)] transition-all duration-300">
           {/* Showcase Preview Image */}
           <div className="rounded-xl sm:rounded-2xl h-36 sm:h-44 xl:h-48 flex items-center justify-center relative overflow-hidden bg-slate-100 border border-slate-100/80">
-            <img 
-              src="/images/card2_showcase.png" 
-              alt="Project Showcase" 
-              className="w-full h-full object-cover object-top rounded-xl sm:rounded-2xl transition-transform duration-300 group-hover:scale-105"
-              loading="lazy"
-            />
+            <picture>
+              <source srcSet="/images/card2_showcase.webp" type="image/webp" />
+              <img 
+                src="/images/card2_showcase.png" 
+                alt="Project Showcase" 
+                className="w-full h-full object-cover object-top rounded-xl sm:rounded-2xl transition-transform duration-300 group-hover:scale-105"
+                loading="eager"
+                decoding="async"
+              />
+            </picture>
           </div>
         </div>
 
@@ -65,12 +73,16 @@ export const ShowcaseCards: React.FC = () => {
         <div className="w-full bg-white rounded-2xl sm:rounded-3xl p-3.5 sm:p-4 shadow-[0_14px_36px_rgba(0,0,0,0.08)] border border-slate-100 group-hover:shadow-[0_20px_44px_rgba(45,98,255,0.16)] transition-all duration-300">
           {/* Showcase Preview Image */}
           <div className="rounded-xl sm:rounded-2xl h-36 sm:h-44 xl:h-48 flex items-center justify-center relative overflow-hidden bg-slate-100 border border-slate-100/80">
-            <img 
-              src="/images/card3_showcase.png" 
-              alt="E-commerce Showcase" 
-              className="w-full h-full object-cover object-top rounded-xl sm:rounded-2xl transition-transform duration-300 group-hover:scale-105"
-              loading="lazy"
-            />
+            <picture>
+              <source srcSet="/images/card3_showcase.webp" type="image/webp" />
+              <img 
+                src="/images/card3_showcase.png" 
+                alt="E-commerce Showcase" 
+                className="w-full h-full object-cover object-top rounded-xl sm:rounded-2xl transition-transform duration-300 group-hover:scale-105"
+                loading="eager"
+                decoding="async"
+              />
+            </picture>
           </div>
         </div>
 

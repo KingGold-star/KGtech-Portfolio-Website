@@ -11,7 +11,7 @@ interface HeroPortraitProps {
 }
 
 export const HeroPortrait: React.FC<HeroPortraitProps> = ({ 
-  imageSrc = '/images/praise_portrait.png', 
+  imageSrc = '/images/praise_portrait.webp', 
   className = '' 
 }) => {
   const [photo, setPhoto] = useState<string>(imageSrc);
@@ -81,7 +81,15 @@ export const HeroPortrait: React.FC<HeroPortraitProps> = ({
             src={photo}
             alt="Praise Egburedi - Lead Developer & UI/UX Architect"
             referrerPolicy="no-referrer"
-            onError={() => setHasError(true)}
+            loading="eager"
+            decoding="async"
+            onError={() => {
+              if (photo.endsWith('.webp')) {
+                setPhoto('/images/praise_portrait.png');
+              } else {
+                setHasError(true);
+              }
+            }}
             className="h-[360px] sm:h-[520px] md:h-[620px] lg:h-[700px] xl:h-[780px] w-auto max-w-[88vw] sm:max-w-none object-contain drop-shadow-[0_12px_28px_rgba(0,0,0,0.07)] transition-transform duration-300 group-hover:scale-[1.01] [mask-image:linear-gradient(to_bottom,#000_0%,#000_68%,rgba(0,0,0,0.85)_76%,rgba(0,0,0,0.4)_84%,rgba(0,0,0,0.08)_90%,transparent_94%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,#000_0%,#000_68%,rgba(0,0,0,0.85)_76%,rgba(0,0,0,0.4)_84%,rgba(0,0,0,0.08)_90%,transparent_94%,transparent_100%)]"
           />
 

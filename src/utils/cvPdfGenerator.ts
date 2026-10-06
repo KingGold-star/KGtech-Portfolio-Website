@@ -3,9 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { jsPDF } from 'jspdf';
-
-export function downloadCVPdf(fileName: string = 'Praise_Egburedi_CV_SiteNoble_Nexus.pdf'): void {
+export async function downloadCVPdf(fileName: string = 'Praise_Egburedi_CV_SiteNoble_Nexus.pdf'): Promise<void> {
+  const { jsPDF } = await import('jspdf');
   const doc = new jsPDF({
     orientation: 'portrait',
     unit: 'mm',

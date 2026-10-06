@@ -22,12 +22,12 @@ export const ResumePage: React.FC = () => {
   const [copied, setCopied] = useState(false);
   const [isDownloading, setIsDownloading] = useState(false);
 
-  const handleDownloadCV = (e?: React.MouseEvent) => {
+  const handleDownloadCV = async (e?: React.MouseEvent) => {
     if (e) e.preventDefault();
     trackEvent('cv_download_click', { format: 'pdf_document' });
     try {
       setIsDownloading(true);
-      downloadCVPdf('Praise_Egburedi_CV_SiteNoble_Nexus.pdf');
+      await downloadCVPdf('Praise_Egburedi_CV_SiteNoble_Nexus.pdf');
     } catch (err) {
       console.error('Failed to generate PDF document:', err);
     } finally {
