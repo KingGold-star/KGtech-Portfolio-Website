@@ -37,61 +37,40 @@ export const Navbar: React.FC = () => {
         return prev;
       });
 
-      // Scroll Spy for active section highlighting on homepage
+      // Continuous Range-Based Scroll Spy for active section highlighting on homepage
       if (currentPath === '/') {
-        if (currentY < 180) {
-          setActiveSection('Home');
+        // Offset focus line (180px down from viewport top)
+        const scrollPosition = currentY + 180;
+
+        const servicesEl = document.getElementById('services');
+        const aboutEl = document.getElementById('about');
+        const pricingEl = document.getElementById('pricing');
+        const testimonialsEl = document.getElementById('testimonials');
+        const faqEl = document.getElementById('faq');
+
+        // Check if user scrolled near the bottom of the page
+        const isAtBottom = window.innerHeight + currentY >= document.documentElement.scrollHeight - 60;
+        if (isAtBottom) {
+          setActiveSection('FAQ');
         } else {
-          // Check if reached very bottom of page
-          const isAtBottom = window.innerHeight + currentY >= document.documentElement.scrollHeight - 60;
-          if (isAtBottom) {
-            setActiveSection('FAQ');
+          const servicesTop = servicesEl ? servicesEl.getBoundingClientRect().top + currentY : Infinity;
+          const aboutTop = aboutEl ? aboutEl.getBoundingClientRect().top + currentY : Infinity;
+          const pricingTop = pricingEl ? pricingEl.getBoundingClientRect().top + currentY : Infinity;
+          const testimonialsTop = testimonialsEl ? testimonialsEl.getBoundingClientRect().top + currentY : Infinity;
+          const faqTop = faqEl ? faqEl.getBoundingClientRect().top + currentY : Infinity;
+
+          if (scrollPosition < servicesTop) {
+            setActiveSection('Home');
+          } else if (scrollPosition < aboutTop) {
+            setActiveSection('Services');
+          } else if (scrollPosition < pricingTop) {
+            setActiveSection('About');
+          } else if (scrollPosition < testimonialsTop) {
+            setActiveSection('Pricing');
+          } else if (scrollPosition < faqTop) {
+            setActiveSection('Testimonials');
           } else {
-            // Priority ordered sections from top to bottom
-            const sections = [
-              { id: 'faq', label: 'FAQ' },
-              { id: 'testimonials', label: 'Testimonials' },
-              { id: 'pricing', label: 'Pricing' },
-              { id: 'about', label: 'About' },
-              { id: 'services', label: 'Services' },
-            ];
-
-            const viewportFocus = 140;
-            let matched = 'Home';
-
-            for (const sec of sections) {
-              const el = document.getElementById(sec.id);
-              if (el) {
-                const rect = el.getBoundingClientRect();
-                // Element is spanning across the viewport focus line
-                if (rect.top <= viewportFocus && rect.bottom > viewportFocus) {
-                  matched = sec.label;
-                  break;
-                }
-              }
-            }
-
-            // If between section gaps, match the closest visible section
-            if (matched === 'Home' && currentY >= 180) {
-              let bestSec = 'Services';
-              let minDistance = Infinity;
-              for (const sec of sections) {
-                const el = document.getElementById(sec.id);
-                if (el) {
-                  const rect = el.getBoundingClientRect();
-                  if (rect.top <= viewportFocus + 260 && rect.bottom > 0) {
-                    const dist = Math.abs(rect.top - viewportFocus);
-                    if (dist < minDistance) {
-                      minDistance = dist;
-                      bestSec = sec.label;
-                    }
-                  }
-                }
-              }
-              matched = bestSec;
-            }
-
-            setActiveSection(matched);
+            setActiveSection('FAQ');
           }
         }
       } else {
